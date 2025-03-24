@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>The Pizza Maker | Assignment 3</title>
+        <link href="css/styles.css" rel="stylesheet" />
+	    <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <h1>Pizza Maker</h1>
+        <p></p>
+        <form class="pizzaForm" method = "post">
+            <div class="pizzaInfo">
+                <label for="pizzaSize">Pizza Size</label>
+                <select name="pizzaSize" id="pizzaSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xtra large">Xtra Large</option>
+                </select>
+                <label for="pizzaCheese">Cheeses</label>
+                <select name="pizzaCheese" id="pizzaCheese">
+                    <option value="1 cheese">1</option>
+                    <option value="2 cheese">2</option>
+                    <option value="3 cheese">3</option>
+                </select>
+                <label for="pizzaCrust">Crust</label>
+                <select name="pizzaCrust" id="pizzaCrust">
+                    <option value="stuffed">Stuffed</option>
+                    <option value="thin">Thin</option>
+                    <option value="garlic">Garlic</option>
+                    <option value="deep-dish">Deep-dish</option>
+                </select>
+                <label for="pizzaTopping">Toppings</label>
+                <div id="pizzaTopping">
+                    <input type="checkbox" id="topping1" value="pepperoni">
+                    <label for="topping1">Pepperoni</label>
+                    <input type="checkbox" id="topping2" value="anchovies">
+                    <label for="topping2">Anchovies</label>
+                    <input type="checkbox" id="topping3" value="veggies">
+                    <label for="topping3">Veggies</label>
+                    <input type="checkbox" id="topping4" value="olives">
+                    <label for="topping4">Olives</label>
+                    <input type="checkbox" id="topping5" value="onions">
+                    <label for="topping5">Onions</label>
+                </div>
+                <label for="xtra">Anything else?</label>
+                <textarea id="xtra" name="xtra" rows="5">None</textarea>
+            </div>
+        </form>
+        <button>Order</button>
+    </body>
+</html>
